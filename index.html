@@ -1,20 +1,73 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Smart FD Tracker</title><meta name="description" content="Smart FD Tracker helps Indian families keep every fixed deposit, maturity, interest and tax detail in one place.">
-<link rel="stylesheet" href="style.css"></head><body><main>
-<nav><a href="index.html">Home</a><a href="privacy.html">Privacy policy</a></nav>
-<h1>Smart FD Tracker</h1>
-<p class="muted">Keep every fixed deposit, maturity, interest and tax detail of your family in one place.</p>
-<div class="card"><h2 style="margin-top:0">What it does</h2><ul>
-<li>Profiles for each family member, with senior citizen status and TDS settings</li>
-<li>Maturity reminders, interest payout reminders, Form 15G/15H (Form 121) and advance tax reminders</li>
-<li>Interest and TDS reports by profile and financial year, with PDF export</li>
-<li>Home screen with invested and current value</li>
-<li>Bank FD rate comparison (Premium)</li>
-<li>English, Hindi and Marathi</li>
-<li>Optional app lock and optional Google Drive backup</li></ul></div>
-<div class="card"><h2 style="margin-top:0">Your data stays with you</h2>
-<p>Your profiles and FDs are stored only on your phone. There are no ads, no analytics and no account to create. See the <a href="privacy.html">privacy policy</a>.</p></div>
-<div class="card"><h2 style="margin-top:0">Contact</h2><p>Questions, feedback or suggestions: <a href="mailto:chaitanya.mankar45@gmail.com">chaitanya.mankar45@gmail.com</a></p></div>
-<footer>Designed and developed by Chaitanya Mankar. Figures in the app are estimates, not financial, tax or legal advice.</footer>
-</main></body></html>
+<title>Smart FD Tracker: all your family's fixed deposits in one place</title><meta name="description" content="Track FD maturities, interest and TDS for your whole family, with reminders and PDF reports. English, Hindi and Marathi.">
+<meta property="og:title" content="Smart FD Tracker: all your family's fixed deposits in one place"><meta property="og:description" content="Track FD maturities, interest and TDS for your whole family, with reminders and PDF reports. English, Hindi and Marathi."><meta property="og:type" content="website">
+<meta name="theme-color" content="#2C3EBF"><link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;600;700&display=swap"><link rel="stylesheet" href="style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">Smart FD Tracker</a><nav class="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="pricing.html">Plans</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<h1>Know when every FD matures, and what it pays.</h1>
+<p class="lede">Smart FD Tracker keeps your family&rsquo;s fixed deposits in one place: maturities, interest, TDS and the reminders that come with them. Built for Indian families, in English, Hindi and Marathi.</p>
+<div class="cta"><span class="soon"><b>Google Play</b> Coming soon</span><a class="btn ghost" href="features.html">See what it tracks</a></div>
+</div>
+<form class="passbook" onsubmit="return false" aria-labelledby="calc-t">
+<p class="passbook-title" id="calc-t">Try an FD</p>
+<div class="fields">
+<div class="field"><label for="c-amt">Amount (&#8377;)</label><input id="c-amt" type="number" inputmode="numeric" min="0" step="1000" value="500000"></div>
+<div class="field"><label for="c-rate">Interest rate (% a year)</label><input id="c-rate" type="number" inputmode="decimal" min="0" max="20" step="0.05" value="7.10"></div>
+<div class="field wide"><label for="c-ten">Tenure: <span class="tenure-read num" id="c-ten-read">2 years</span></label><input id="c-ten" type="range" min="6" max="120" step="1" value="24"></div>
+<label class="check wide field"><input id="c-tds" type="checkbox"> TDS of 10% is deducted on the interest</label>
+</div>
+<div class="result" aria-live="polite">
+<div class="label">You receive at maturity</div>
+<div class="big num" id="c-big">&#8377;0</div>
+<div class="on-date num" id="c-date"></div>
+<div class="split" aria-hidden="true"><i class="p" id="s-p" style="width:0"></i><i class="i" id="s-i" style="width:0"></i><i class="t" id="s-t" style="width:0"></i></div>
+<dl class="breakdown num">
+<dt>Amount invested</dt><dd id="c-p"></dd>
+<dt>Interest earned</dt><dd class="g" id="c-i"></dd>
+</dl>
+<dl class="breakdown num" id="c-trow" hidden><dt>TDS</dt><dd class="r" id="c-tv"></dd></dl>
+<dl class="breakdown num"><dt><b>Total received</b></dt><dd id="c-net"></dd></dl>
+</div>
+<p class="fine">Estimate for a cumulative FD, interest compounded every quarter. Your bank&rsquo;s receipt is the final word.</p>
+</form>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>What it keeps track of</h2>
+<table class="ledger"><tbody>
+<tr><th scope="row">Maturities</th><td>Every FD with its bank, amount, rate and maturity date, in one list. See what matures this month, this quarter or this year.</td></tr>
+<tr><th scope="row">Interest and TDS</th><td>Interest by profile and financial year, with TDS worked out for each profile. Where TDS applies, the app shows the 10% deduction and adjusts the renewal amount.</td></tr>
+<tr><th scope="row">Reminders</th><td>Maturity, interest payout, Form 121 and advance tax reminders, a simple notification on the day. Tap it and the app opens the right screen.</td></tr>
+<tr><th scope="row">Reports</th><td>PDF interest certificates and Form 121 lists you can share or keep, for the profile and year you pick.</td></tr>
+<tr><th scope="row">Rates</th><td>Compare your FD&rsquo;s rate with current bank rates before it matures, so you can decide whether to renew. (Premium)</td></tr>
+</tbody></table>
+</div></section>
+
+<section><div class="wrap two">
+<div>
+<h2>One app for the whole family</h2>
+<p class="lede" style="font-size:1.1rem">Add a profile for each person whose FDs you look after. Each profile has its own senior citizen status and TDS setting, so the numbers match what each person actually gets.</p>
+<ul class="chips"><li>Self</li><li>Father</li><li>Mother</li><li>Spouse</li><li>Son</li><li>Daughter</li><li>Brother</li><li>Sister</li><li>Uncle</li><li>Aunty</li><li>Nephew</li><li>Niece</li></ul>
+</div>
+<div>
+<div class="note">Your data stays on your phone. There is no account to create, no ads and no tracking. An optional backup goes to your own Google Drive, and only when you ask for it. <a href="privacy.html">Read the privacy policy</a>.</div>
+<div class="note">Optional app lock uses your phone&rsquo;s fingerprint, face or PIN, so family details stay private on a shared phone.</div>
+</div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>Free for your first 2 FDs</h2>
+<p class="lede">Start free with your first two FDs. Premium covers every FD, with all the reports, reminders and rate checks.</p>
+<p style="margin-top:22px"><a class="btn" href="pricing.html">Compare plans</a></p>
+</div></section>
+
+<section class="cta-band"><div class="wrap"><div><h2>Coming soon on Google Play</h2><p class="lede" style="margin:10px 0 0">Questions before then? Write to <a href="mailto:chaitanyamankar45@gmail.com">chaitanyamankar45@gmail.com</a>.</p></div><span class="soon"><b>Google Play</b> Coming soon</span></div></section>
+</main>
+<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<div>Smart FD Tracker is designed and developed by Chaitanya Mankar. Figures in the app and on this site are estimates, not financial, tax or legal advice.</div></div></footer>
+<script src="calc.js"></script></body></html>
