@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FD Calculator India: FD Maturity Calculator with TDS | Smart FD Tracker</title><meta name="description" content="Free FD calculator for India. See the maturity amount, interest and maturity date of a fixed deposit with quarterly compounding, and the effect of 10% TDS.">
+<meta property="og:title" content="FD Calculator India: FD Maturity Calculator with TDS | Smart FD Tracker"><meta property="og:description" content="Free FD calculator for India. See the maturity amount, interest and maturity date of a fixed deposit with quarterly compounding, and the effect of 10% TDS."><meta property="og:type" content="website">
+<link rel="canonical" href="https://manageyourfinance.github.io/smart-fd-tracker/calculator.html">
+<meta name="theme-color" content="#2C3EBF"><link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;600;700&display=swap"><link rel="stylesheet" href="style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">Smart FD Tracker</a><nav class="site-nav" aria-label="Main"><a href="index.html">Home</a><a href="features.html">Features</a><a href="calculator.html" aria-current="page">Calculator</a><a href="guides.html">Guides</a><a href="pricing.html">Plans</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main"><div class="wrap page-title"><h1>FD calculator India: FD maturity calculator with TDS</h1><p class="lede">Enter the amount, rate and tenure of a fixed deposit to see the maturity amount, the interest and the maturity date. Tick the TDS box to see what you receive after 10% tax is deducted.</p></div>
+<section><div class="wrap two"><div><form class="passbook" onsubmit="return false" aria-labelledby="calc-t">
+<p class="passbook-title" id="calc-t">Try an FD</p>
+<div class="fields">
+<div class="field"><label for="c-amt">Amount (&#8377;)</label><input id="c-amt" type="number" inputmode="numeric" min="0" step="1000" value="500000"></div>
+<div class="field"><label for="c-rate">Interest rate (% a year)</label><input id="c-rate" type="number" inputmode="decimal" min="0" max="20" step="0.05" value="7.10"></div>
+<div class="field wide"><label for="c-ten">Tenure: <span class="tenure-read num" id="c-ten-read">2 years</span></label><input id="c-ten" type="range" min="6" max="120" step="1" value="24"></div>
+<label class="check wide field"><input id="c-tds" type="checkbox"> TDS of 10% is deducted on the interest</label>
+</div>
+<div class="result" aria-live="polite">
+<div class="label">You receive at maturity</div>
+<div class="big num" id="c-big">&#8377;0</div>
+<div class="on-date num" id="c-date"></div>
+<div class="split" aria-hidden="true"><i class="p" id="s-p" style="width:0"></i><i class="i" id="s-i" style="width:0"></i><i class="t" id="s-t" style="width:0"></i></div>
+<dl class="breakdown num">
+<dt>Amount invested</dt><dd id="c-p"></dd>
+<dt>Interest earned</dt><dd class="g" id="c-i"></dd>
+</dl>
+<dl class="breakdown num" id="c-trow" hidden><dt>TDS</dt><dd class="r" id="c-tv"></dd></dl>
+<dl class="breakdown num"><dt><b>Total received</b></dt><dd id="c-net"></dd></dl>
+</div>
+<p class="fine">Estimate for a cumulative FD, interest compounded every quarter. Your bank&rsquo;s receipt is the final word.</p>
+</form></div>
+<div class="prose">
+<h2>How this FD calculator works</h2>
+<p>It uses the formula most Indian banks use for a cumulative FD, where interest is compounded every quarter: maturity amount = P × (1 + r ÷ 4)<sup>4t</sup>. Read <a href="how-fd-interest-is-calculated.html">how FD interest is calculated</a> for a worked example.</p>
+<h2>What it does not cover</h2>
+<ul><li>FDs that pay interest out each month, quarter or year (the app handles these).</li><li>Different compounding or day counts used by some banks.</li><li>Your slab rate, since TDS here is a flat 10% of the interest. See <a href="how-tds-on-fd-works.html">how TDS on FD works</a>.</li></ul>
+<h2>Want it for all your FDs?</h2>
+<p>Smart FD Tracker calculates this for every FD you add, keeps the maturity dates, and reminds you before they arrive. <a href="features.html">See the features</a>.</p>
+</div></div></section></main>
+<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="guides.html">Guides</a><a href="calculator.html">FD calculator</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<div>Smart FD Tracker is designed and developed by Chaitanya Mankar. Figures in the app and on this site are estimates, not financial, tax or legal advice.</div></div></footer>
+<script src="calc.js"></script></body></html>

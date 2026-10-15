@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://manageyourfinance.github.io/smart-fd-tracker/sitemap.xml

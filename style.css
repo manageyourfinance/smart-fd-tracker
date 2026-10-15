@@ -154,3 +154,10 @@ details p{margin:0 0 16px;color:var(--muted);max-width:40rem}
 .cta-band .wrap{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.crumbs{margin:0 0 6px;font-weight:600}
+.formula{font:700 1.2rem var(--head);background:var(--tint);padding:12px 16px;border-radius:8px;overflow-x:auto}
+.article h3{margin:1.6em 0 .2em}
+.article ol{padding-left:1.3em}
+.article .compare td,.article .compare th{text-align:left;width:auto}
+.ledger th a{color:var(--ink);text-decoration:none}.ledger th a:hover{color:var(--indigo);text-decoration:underline}
