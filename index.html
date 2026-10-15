@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#2C3EBF"><link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;600;700&display=swap"><link rel="stylesheet" href="style.css"></head><body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head"><div class="wrap"><a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">Smart FD Tracker</a><nav class="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="calculator.html">Calculator</a><a href="guides.html">Guides</a><a href="pricing.html">Plans</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34">Smart FD Tracker</a><nav class="site-nav" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="calculator.html">Calculator</a><a href="articles.html">Articles</a><a href="pricing.html">Plans</a><a href="faq.html">FAQ</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
 <main id="main">
 <section class="hero"><div class="wrap hero-grid">
 <div>
@@ -20,7 +20,7 @@
 <div class="field"><label for="c-amt">Amount (&#8377;)</label><input id="c-amt" type="number" inputmode="numeric" min="0" step="1000" value="500000"></div>
 <div class="field"><label for="c-rate">Interest rate (% a year)</label><input id="c-rate" type="number" inputmode="decimal" min="0" max="20" step="0.05" value="7.10"></div>
 <div class="field wide"><label for="c-ten">Tenure: <span class="tenure-read num" id="c-ten-read">2 years</span></label><input id="c-ten" type="range" min="6" max="120" step="1" value="24"></div>
-<label class="check wide field"><input id="c-tds" type="checkbox"> TDS of 10% is deducted on the interest</label>
+<label class="check wide field"><input id="c-tds" type="checkbox" checked> TDS of 10% is deducted on the interest</label>
 </div>
 <div class="result" aria-live="polite">
 <div class="label">You receive at maturity</div>
@@ -38,6 +38,18 @@
 </form>
 </div></section>
 
+
+<section class="usp" aria-labelledby="usp-h"><div class="wrap">
+<h2 id="usp-h">Four things it does for every FD</h2>
+<div class="usp-grid">
+<div><h3>Reminders</h3><p>Maturity, interest payout, Form 121 and advance tax, before each date.</p></div>
+<div><h3>Interest estimate on every FD</h3><p>Interest and maturity amount for each FD, with TDS worked out.</p></div>
+<div><h3>All your FDs, tracked</h3><p>Every bank and every family member in one list.</p></div>
+<div><h3>Reports in PDF</h3><p>Ready to print and share with your bank or CA.</p></div>
+</div>
+<p class="usp-detail"><strong>In the reports and reminders:</strong> Interest certificate, Form 121 generation, advance tax estimation and reminders, for all your FDs.</p>
+<p class="usp-note">Free for your first 2 FDs. Premium covers every FD.</p>
+</div></section>
 <section class="band"><div class="wrap">
 <h2>What it keeps track of</h2>
 <table class="ledger"><tbody>
@@ -62,9 +74,9 @@
 </div></section>
 
 <section><div class="wrap">
-<h2>Guides to FD interest and tax</h2>
-<p class="lede">Plain-language guides on how FD interest is calculated, how TDS works, Form 121 and advance tax.</p>
-<p style="margin-top:22px"><a class="btn ghost" href="guides.html">Read the guides</a> <a class="btn ghost" href="calculator.html">Open the FD calculator</a></p>
+<h2>Articles on FD interest and tax</h2>
+<p class="lede">Plain-language articles on how FD interest is calculated, how TDS works, Form 121 and advance tax.</p>
+<p style="margin-top:22px"><a class="btn ghost" href="articles.html">Read the articles</a> <a class="btn ghost" href="calculator.html">Open the FD calculator</a></p>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -75,6 +87,6 @@
 
 <section class="cta-band"><div class="wrap"><div><h2>Coming soon on Google Play</h2><p class="lede" style="margin:10px 0 0">Questions before then? Write to <a href="mailto:chaitanyamankar45@gmail.com">chaitanyamankar45@gmail.com</a>.</p></div><span class="soon"><b>Google Play</b> Coming soon</span></div></section>
 </main>
-<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="guides.html">Guides</a><a href="calculator.html">FD calculator</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="articles.html">Articles</a><a href="calculator.html">FD calculator</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
 <div>Smart FD Tracker is designed and developed by Chaitanya Mankar. Figures in the app and on this site are estimates, not financial, tax or legal advice.</div></div></footer>
 <script src="calc.js"></script></body></html>
