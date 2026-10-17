@@ -176,3 +176,23 @@ details p{margin:0 0 16px;color:var(--muted);max-width:40rem}
 .usp-grid p{margin:0;opacity:.92}
 .usp-detail{margin:26px 0 4px;font-size:1.15rem;max-width:46rem}
 .usp-note{margin:0;opacity:.85;font-size:.95rem}
+
+.hero .tagline{font-weight:700;color:var(--accent,#1d4ed8);font-size:1.1rem;margin:-6px 0 14px}
+
+/* problems and gallery */
+.problems{padding:56px 0}
+.pairs{margin-top:28px;display:grid;gap:14px}
+.pair{display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card)}
+@media(min-width:760px){.pair{grid-template-columns:1fr 1fr}}
+.pair>div{padding:18px 22px}
+.pair span{display:block;font:700 .75rem var(--body);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.pair h3{margin-bottom:4px}
+.pair p{margin:0;color:var(--muted)}
+.prob span{color:var(--rust)}
+.sol{background:var(--tint)}
+.sol span{color:var(--green)}
+.gallery{padding:40px 0 56px}
+.shots{list-style:none;margin:26px 0 0;padding:4px 0 18px;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory}
+.shots li{flex:0 0 auto;scroll-snap-align:start}
+.shots img{width:min(240px,62vw);height:auto;border-radius:18px;border:1px solid var(--line)}
+.solo{width:min(300px,100%);height:auto;margin:0 auto;border-radius:20px;border:1px solid var(--line)}
