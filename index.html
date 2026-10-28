@@ -16,9 +16,10 @@
 <div class="cta"><span class="soon"><b>Google Play</b> Coming soon</span><a class="btn ghost" href="features.html">See what it tracks</a></div>
 </div>
 <form class="passbook" onsubmit="return false" aria-labelledby="calc-t">
-<p class="passbook-title" id="calc-t">Try an FD</p>
+<p class="passbook-title" id="calc-t">Try a deposit</p>
+<div class="seg" role="tablist" aria-label="Deposit type"><button type="button" role="tab" id="t-fd" aria-selected="true">FD</button><button type="button" role="tab" id="t-rd" aria-selected="false">RD</button></div>
 <div class="fields">
-<div class="field"><label for="c-amt">Amount (&#8377;)</label><input id="c-amt" type="number" inputmode="numeric" min="0" step="1000" value="500000"></div>
+<div class="field"><label for="c-amt" id="c-amt-l">Amount (&#8377;)</label><input id="c-amt" type="number" inputmode="numeric" min="0" step="1000" value="500000"></div>
 <div class="field"><label for="c-rate">Interest rate (% a year)</label><input id="c-rate" type="number" inputmode="decimal" min="0" max="20" step="0.05" value="7.10"></div>
 <div class="field wide"><label for="c-ten">Tenure: <span class="tenure-read num" id="c-ten-read">2 years</span></label><input id="c-ten" type="range" min="6" max="120" step="1" value="24"></div>
 <label class="check wide field"><input id="c-tds" type="checkbox" checked> TDS of 10% is deducted on the interest</label>
@@ -29,13 +30,13 @@
 <div class="on-date num" id="c-date"></div>
 <div class="split" aria-hidden="true"><i class="p" id="s-p" style="width:0"></i><i class="i" id="s-i" style="width:0"></i><i class="t" id="s-t" style="width:0"></i></div>
 <dl class="breakdown num">
-<dt>Amount invested</dt><dd id="c-p"></dd>
+<dt id="c-p-l">Amount invested</dt><dd id="c-p"></dd>
 <dt>Interest earned</dt><dd class="g" id="c-i"></dd>
 </dl>
 <dl class="breakdown num" id="c-trow" hidden><dt>TDS</dt><dd class="r" id="c-tv"></dd></dl>
 <dl class="breakdown num"><dt><b>Total received</b></dt><dd id="c-net"></dd></dl>
 </div>
-<p class="fine">Estimate for a cumulative FD, interest compounded every quarter. Your bank&rsquo;s receipt is the final word.</p>
+<p class="fine" id="c-fine">Estimate for a cumulative FD, interest compounded every quarter. Your bank&rsquo;s receipt is the final word.</p>
 </form>
 </div></section>
 

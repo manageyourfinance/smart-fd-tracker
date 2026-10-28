@@ -203,3 +203,8 @@ details p{margin:0 0 16px;color:var(--muted);max-width:40rem}
 .founder p{margin:0}
 .founder-role{font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--indigo)}
 @media(max-width:560px){.founder{flex-direction:column;text-align:center}.founder img{width:132px;height:132px}}
+
+.seg{display:inline-flex;border:2px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 14px 0}
+.seg button{font:700 .95rem var(--head);padding:8px 26px;border:0;background:var(--card);color:var(--muted);cursor:pointer}
+.seg button[aria-selected=true]{background:var(--indigo);color:var(--on-indigo)}
+.seg button:focus-visible{outline:2px solid var(--indigo);outline-offset:-4px}
