@@ -1,112 +1,65 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ticker Top: live prices on top of every app</title>
-<meta name="description" content="Live crypto, gold and forex prices on a thin strip at the top of your Android screen. By ManageMyFinance.">
-<link rel="icon" href="icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0B0F14;--card:#161B22;--line:#262D36;--fg:#F3F4F6;--muted:#9CA3AF;--green:#22C55E;--red:#F87171}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
-a{color:var(--green)}a:hover{color:#4ADE80}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px}
-.top a{text-decoration:none;color:var(--muted)}.top a:hover{color:var(--fg)}
-.brand{display:flex;align-items:center;gap:10px;color:var(--fg)!important;font-weight:700}
-.brand img{width:32px;height:32px;border-radius:8px}
-.strip{border-top:6px solid var(--green);border-bottom:6px solid var(--green);background:var(--card);padding:22px 12px;text-align:center;
-  font-weight:900;font-size:clamp(30px,7vw,60px);letter-spacing:-.5px;white-space:nowrap;overflow:hidden}
-.strip .up{color:var(--green);font-size:.6em;vertical-align:.18em}.strip .dn{color:var(--red);font-size:.6em;vertical-align:.18em}
-.strip .top-word{color:var(--green)}
-.tag{color:var(--green);font-weight:600;font-size:20px;text-align:center;margin:18px 0 4px}
-.lead{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 26px;font-size:17px}
-.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:28px;font-weight:700;text-decoration:none;font-size:16px}
-.btn.primary{background:var(--green);color:#052E16}.btn.ghost{border:1px solid var(--line);color:var(--fg)}
-.btn[aria-disabled=true]{opacity:.75;cursor:default}
-h1{font-size:34px;line-height:1.2;margin:28px 0 8px}
-h2{font-size:24px;margin:44px 0 14px}h3{font-size:18px;margin:0 0 6px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
-.card p{margin:0;color:var(--muted)}
-.price{font-size:30px;font-weight:800;margin:4px 0}
-.badge{display:inline-block;background:var(--green);color:#052E16;font-weight:800;font-size:12px;padding:3px 8px;border-radius:6px}
-.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 60px;position:relative}
-.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#052E16;font-weight:800;display:flex;align-items:center;justify-content:center}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
-summary{cursor:pointer;font-weight:600}
-details p{color:var(--muted);margin:10px 0 0}
-.doc h2{font-size:20px;margin:30px 0 8px}.doc p,.doc li{color:#D1D5DB}.doc ul{padding-left:22px}
-.note{background:var(--card);border-left:4px solid var(--green);border-radius:12px;padding:14px 16px;color:#D1D5DB}
-footer{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 40px;color:var(--muted);font-size:14px}
-footer nav{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:10px}footer a{color:var(--muted)}
-</style>
-</head>
-<body>
-<header class="wrap top">
-  <a class="brand" href=""><img src="icon.png" alt="">Ticker Top</a>
-  <a href="/">ManageMyFinance</a>
-</header>
-<main>
-
-<div class="strip" role="img" aria-label="Ticker Top logo"><span class="up">▲</span> TICKER <span class="top-word">TOP</span> <span class="dn">▼</span></div>
-<div class="wrap">
-  <p class="tag">Your market, on top of every app.</p>
-  <p class="lead">Ticker Top puts live crypto, gold and currency prices on a thin strip just below your phone's notification bar, so the market is always one glance away, in any app.</p>
-  <div class="cta">
-    <a class="btn primary" aria-disabled="true">Google Play · Coming soon</a>
-    <a class="btn ghost" href="#pricing">See pricing</a>
-  </div>
-
-  <h2>Why Ticker Top</h2>
-  <div class="grid">
-    <div class="card"><h3>On top of every app</h3><p>A slim, scrolling price strip right under the notification bar, in WhatsApp, YouTube, Chrome or wherever you are.</p></div>
-    <div class="card"><h3>Your currency</h3><p>Pick your country once. Prices show in ₹, $, £, €, AED and more, with gold per 10 g where that's how it's quoted.</p></div>
-    <div class="card"><h3>Crypto, gold & forex</h3><p>Bitcoin, Ethereum and any coin you search for, plus gold and currency pairs like USD/INR.</p></div>
-    <div class="card"><h3>Knows when markets close</h3><p>Forex and gold close on weekends. The strip steps aside and comes back when they open. Crypto runs 24×7.</p></div>
-    <div class="card"><h3>Stays out of the way</h3><p>Hides on your home screen and lock screen if you want, and taps go straight through to the app below.</p></div>
-    <div class="card"><h3>Private & light</h3><p>Your list stays on your phone. No ads and no tracking. Built to go easy on battery.</p></div>
-  </div>
-
-  <h2>How it works</h2>
-  <ol class="steps">
-    <li><strong>Sign in with Google</strong> and choose your country.</li>
-    <li><strong>Add what you follow:</strong> BTC, ETH, gold, USD/INR and more.</li>
-    <li><strong>Turn on "Show over other apps"</strong> and your ticker runs on top of every app.</li>
-  </ol>
-
-  <h2 id="pricing">Pricing</h2>
-  <div class="grid">
-    <div class="card"><span class="badge">INDIA</span><div class="price">₹100 once</div><p>Pay once and Pro is yours forever. No subscription. 7-day free trial first.</p></div>
-    <div class="card"><span class="badge">OTHER COUNTRIES</span><div class="price">$4.99 / year</div><p>Yearly subscription with a 7-day free trial through Google Play. Cancel anytime.</p></div>
-  </div>
-  <p class="lead" style="margin-top:14px">Prices are shown in your local currency in Google Play and may vary slightly by country.</p>
-
-  <h2>Questions</h2>
-  <details><summary>Does Ticker Top show Indian stocks like Nifty or Reliance?</summary><p>Not yet. Showing NSE/BSE prices in an app needs a paid exchange licence. Ticker Top shows crypto, gold and forex from free, licensed sources today, and we plan to add Indian stocks later.</p></details>
-  <details><summary>Will it drain my battery?</summary><p>No. The strip is drawn very efficiently, prices refresh only every 15–60 seconds (your choice), and nothing runs while the screen is off or every market on your list is closed.</p></details>
-  <details><summary>Why does it ask for "Display over other apps"?</summary><p>That permission lets the strip show on top of other apps. It can't read or tap anything in those apps.</p></details>
-  <details><summary>Where do the prices come from?</summary><p>Crypto and gold from Binance public market data (Coinbase as backup), and currency rates from Frankfurter, which publishes central-bank reference rates. Gold is shown via PAXG, a token backed by real gold.</p></details>
-  <details><summary>Is this investment advice?</summary><p>No. Prices are for information only and may be delayed. Ticker Top never tells you to buy or sell anything.</p></details>
-  <details><summary>How do I delete my account?</summary><p>In the app go to Settings → Delete account, or see <a href="delete-account/">how to delete your account</a>.</p></details>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ticker Top: live prices on top of every app</title><meta name="description" content="Live crypto, gold and forex prices on a thin strip on top of every app.">
+<meta property="og:title" content="Ticker Top: live prices on top of every app"><meta property="og:description" content="Live crypto, gold and forex prices on a thin strip on top of every app."><meta property="og:type" content="website"><meta property="og:image" content="https://managemyfinance.in/tickertop/icon.png"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://managemyfinance.in/tickertop/">
+<meta name="theme-color" content="#2C3EBF"><link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;600;700&display=swap"><link rel="stylesheet" href="../style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap"><a class="brand" href="index.html"><img src="icon.png" alt="" width="34" height="34">Ticker Top</a><nav class="site-nav" aria-label="Main"><a href="../index.html">Home</a><a href="index.html" aria-current="page">Ticker Top</a><a href="privacy/index.html">Privacy</a><a href="delete-account/index.html">Delete account</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav></div></header>
+<main id="main"><section class="hero"><div class="wrap hero-grid">
+<div>
+<h1>Your market, on top of every app.</h1>
+<p class="tagline">Live crypto, gold and forex, one glance away.</p>
+<p class="lede">Ticker Top puts live prices on a thin strip just below your phone&rsquo;s notification bar, in WhatsApp, YouTube, Chrome or wherever you are. Prices in your own currency.</p>
+<div class="cta"><span class="soon"><b>Google Play</b> Coming soon</span><a class="btn ghost" href="#plans">See plans</a></div>
 </div>
+<div><img src="shot-overlay.webp" width="300" height="533" alt="The Ticker Top strip below the status bar on top of a chat app." style="display:block;margin:0 auto;width:min(300px,80vw);height:auto;border-radius:18px"></div>
+</div></section>
 
-</main>
-<footer class="wrap">
-  <nav>
-    <a href="">Ticker Top</a>
-    <a href="privacy/">Privacy policy</a>
-    <a href="delete-account/">Delete account</a>
-    <a href="mailto:managemyfinance.in@gmail.com?subject=Ticker%20Top">Contact</a>
-    <a href="/">ManageMyFinance</a>
-  </nav>
-  <div>Ticker Top is designed and developed by Chaitanya Mankar · A ManageMyFinance app · © 2026</div>
-  <div>Prices are for information only and may be delayed. Ticker Top does not give investment advice.</div>
-</footer>
-</body>
-</html>
+<section class="usp" aria-labelledby="usp-h"><div class="wrap">
+<h2 id="usp-h">Why Ticker Top</h2>
+<div class="usp-grid">
+<div><h3>On top of every app</h3><p>A slim, scrolling price strip right under the notification bar. Taps go straight through to the app below.</p></div>
+<div><h3>Your currency</h3><p>Pick your country once. Prices in &#8377;, $, &pound;, &euro;, AED and more, with gold per 10 g where that is how it is quoted.</p></div>
+<div><h3>Crypto, gold and forex</h3><p>Bitcoin, Ethereum, Solana and more, plus gold and currency pairs like USD/INR.</p></div>
+<div><h3>Knows when markets close</h3><p>Forex and gold close on weekends. The strip steps aside and comes back when they open. Crypto runs 24&times;7.</p></div>
+</div>
+<p class="usp-note">Your list stays on your phone. No ads and no tracking.</p>
+</div></section>
+
+<section class="gallery" aria-labelledby="gal-h"><div class="wrap">
+<h2 id="gal-h">See it on a phone</h2>
+<p class="lede">Real screens from the app.</p>
+</div><div class="wrap"><ul class="shots" tabindex="0" aria-label="App screenshots, scroll sideways"><li><img src="shot-overlay.webp" width="300" height="533" loading="lazy" alt="The Ticker Top price strip just below the status bar, on top of a chat app."></li><li><img src="shot-ticker.webp" width="300" height="533" loading="lazy" alt="My Ticker screen with BTC, ETH, SOL, gold and EUR/USD, live and closed markets marked."></li><li><img src="shot-add.webp" width="300" height="533" loading="lazy" alt="Add screen with crypto, gold and forex to add to the ticker."></li><li><img src="shot-hours.webp" width="300" height="533" loading="lazy" alt="Gold and EUR/USD marked closed, with the time they open again."></li><li><img src="shot-settings.webp" width="300" height="533" loading="lazy" alt="Settings with country and currency, theme, ticker settings and plan."></li></ul></div></section>
+
+<section class="band"><div class="wrap">
+<h2>How it works</h2>
+<table class="ledger"><tbody>
+<tr><th scope="row">1. Sign in</th><td>Sign in with Google and choose your country. Prices show in your currency.</td></tr>
+<tr><th scope="row">2. Add</th><td>Add what you follow: BTC, ETH, gold, USD/INR and more.</td></tr>
+<tr><th scope="row">3. Turn on</th><td>Turn on Show over other apps and your ticker runs on top of every app.</td></tr>
+</tbody></table>
+</div></section>
+
+<section id="plans"><div class="wrap">
+<h2>Plans</h2>
+<p class="lede">Every plan starts with a 7-day free trial.</p>
+<div class="plans" style="margin-top:22px">
+<div class="plan pro"><h3>India</h3><div class="price">&#8377;100 <small>once</small></div><small class="no">One-time payment through Google Play</small>
+<ul><li>7-day free trial</li><li>Pay once and Pro is yours forever</li><li>No subscription</li></ul></div>
+<div class="plan"><h3>Other countries</h3><div class="price">$4.99 <small>a year</small></div><small class="no">Yearly subscription through Google Play</small>
+<ul><li>7-day free trial</li><li>Renews every year until you cancel</li><li>Cancel anytime in Google Play</li></ul></div>
+</div>
+<p class="fine" style="display:block;background:none;margin-top:18px">Google Play shows prices in your local currency, and they may vary slightly by country.</p>
+</div></section>
+
+<section><div class="wrap prose" style="max-width:46rem;margin-left:auto;margin-right:auto">
+<h2>Questions</h2><details><summary>Does Ticker Top show Indian stocks like Nifty or Reliance?</summary><p>Not yet. Showing NSE or BSE prices in an app needs a paid exchange licence. Ticker Top shows crypto, gold and forex from free sources today, and we plan to add Indian stocks later.</p></details><details><summary>Will it drain my battery?</summary><p>No. The strip is drawn very efficiently, prices refresh every 15 to 60 seconds (your choice), and nothing runs while the screen is off or every market on your list is closed.</p></details><details><summary>Why does it ask for Display over other apps?</summary><p>That permission lets the strip show on top of other apps. It cannot read or tap anything in those apps.</p></details><details><summary>Where do the prices come from?</summary><p>Crypto and gold from Binance public market data, with Coinbase as backup, and currency rates from Frankfurter, which publishes central-bank reference rates. Gold is shown through PAXG, a token backed by real gold.</p></details><details><summary>Is this investment advice?</summary><p>No. Prices are for information only and may be delayed. Ticker Top never tells you to buy or sell anything.</p></details><details><summary>How do I cancel the subscription?</summary><p>Open Google Play, go to Payments and subscriptions, then Subscriptions, and cancel Ticker Top. Pro stays active until the end of the paid period.</p></details><details><summary>How do I delete my account?</summary><p>In the app go to Settings, Delete account, or see <a href="delete-account/index.html">how to delete your account</a>.</p></details>
+</div></section>
+
+<section class="cta-band"><div class="wrap"><div><h2>Coming soon on Google Play</h2><p class="lede" style="margin:10px 0 0">Questions before then? Write to <a href="mailto:managemyfinance.in@gmail.com">managemyfinance.in@gmail.com</a>.</p></div><span class="soon"><b>Google Play</b> Coming soon</span></div></section></main>
+<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="index.html">Ticker Top</a><a href="privacy/index.html">Privacy policy</a><a href="delete-account/index.html">Delete account</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../index.html">Smart FD Tracker</a></nav>
+<div><strong>Your market, on top of every app.</strong></div>
+<div>Ticker Top is designed and developed by Chaitanya Mankar, a ManageMyFinance app. Prices are for information only and may be delayed. Ticker Top does not give investment advice.</div></div></footer>
+</body></html>

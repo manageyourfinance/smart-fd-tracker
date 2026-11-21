@@ -1,125 +1,31 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy policy · Ticker Top</title>
-<meta name="description" content="How Ticker Top handles your information.">
-<link rel="icon" href="../icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#0B0F14;--card:#161B22;--line:#262D36;--fg:#F3F4F6;--muted:#9CA3AF;--green:#22C55E;--red:#F87171}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
-a{color:var(--green)}a:hover{color:#4ADE80}
-.wrap{max-width:880px;margin:0 auto;padding:0 20px}
-.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px}
-.top a{text-decoration:none;color:var(--muted)}.top a:hover{color:var(--fg)}
-.brand{display:flex;align-items:center;gap:10px;color:var(--fg)!important;font-weight:700}
-.brand img{width:32px;height:32px;border-radius:8px}
-.strip{border-top:6px solid var(--green);border-bottom:6px solid var(--green);background:var(--card);padding:22px 12px;text-align:center;
-  font-weight:900;font-size:clamp(30px,7vw,60px);letter-spacing:-.5px;white-space:nowrap;overflow:hidden}
-.strip .up{color:var(--green);font-size:.6em;vertical-align:.18em}.strip .dn{color:var(--red);font-size:.6em;vertical-align:.18em}
-.strip .top-word{color:var(--green)}
-.tag{color:var(--green);font-weight:600;font-size:20px;text-align:center;margin:18px 0 4px}
-.lead{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 26px;font-size:17px}
-.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:28px;font-weight:700;text-decoration:none;font-size:16px}
-.btn.primary{background:var(--green);color:#052E16}.btn.ghost{border:1px solid var(--line);color:var(--fg)}
-.btn[aria-disabled=true]{opacity:.75;cursor:default}
-h1{font-size:34px;line-height:1.2;margin:28px 0 8px}
-h2{font-size:24px;margin:44px 0 14px}h3{font-size:18px;margin:0 0 6px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
-.card p{margin:0;color:var(--muted)}
-.price{font-size:30px;font-weight:800;margin:4px 0}
-.badge{display:inline-block;background:var(--green);color:#052E16;font-weight:800;font-size:12px;padding:3px 8px;border-radius:6px}
-.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 60px;position:relative}
-.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#052E16;font-weight:800;display:flex;align-items:center;justify-content:center}
-details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
-summary{cursor:pointer;font-weight:600}
-details p{color:var(--muted);margin:10px 0 0}
-.doc h2{font-size:20px;margin:30px 0 8px}.doc p,.doc li{color:#D1D5DB}.doc ul{padding-left:22px}
-.note{background:var(--card);border-left:4px solid var(--green);border-radius:12px;padding:14px 16px;color:#D1D5DB}
-footer{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 40px;color:var(--muted);font-size:14px}
-footer nav{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:10px}footer a{color:var(--muted)}
-</style>
-</head>
-<body>
-<header class="wrap top">
-  <a class="brand" href="../"><img src="../icon.png" alt="">Ticker Top</a>
-  <a href="/">ManageMyFinance</a>
-</header>
-<main>
-
-<div class="wrap doc">
-  <h1>Privacy policy</h1>
-  <p><strong>Ticker Top</strong> (Android app, package <code>com.managemyfinance.ticker</code>) · Last updated: 21 November 2026</p>
-  <div class="note">In short: you sign in with Google so your free trial and plan stay with your account. We store your Google account ID, your email and the date your free trial started. Your list of coins and currencies and your settings stay on your phone. We don't sell data, show ads or track you.</div>
-
-  <h2>Who we are</h2>
-  <p>Ticker Top is made by Chaitanya Mankar under the ManageMyFinance brand (managemyfinance.in), Pune, India. Contact: <a href="mailto:managemyfinance.in@gmail.com">managemyfinance.in@gmail.com</a>.</p>
-
-  <h2>Information we collect</h2>
-  <ul>
-    <li><strong>Google sign-in (Firebase Authentication):</strong> your name, email address and a Firebase user ID. We never see your Google password.</li>
-    <li><strong>Free trial record (Cloud Firestore):</strong> the date and time your 7-day free trial started, stored under your email address.</li>
-    <li><strong>Purchases (Google Play Billing):</strong> payments are handled entirely by Google Play. We never see your card, UPI or bank details. The app only receives from Google whether Ticker Top Pro is active on your account.</li>
-  </ul>
-
-  <h2>Information that stays on your phone</h2>
-  <p>The coins, gold and currency pairs you add, their order, your country and currency, and your settings (theme, speed, refresh time and so on). Uninstalling the app removes them.</p>
-
-  <h2>Price data</h2>
-  <p>To show prices, the app asks public market-data services for the symbols on your list: Binance (data-api.binance.vision), Coinbase (api.exchange.coinbase.com) and Frankfurter (api.frankfurter.dev). These requests contain only the symbols, for example BTC or USD/INR, never your name or email. Like any website, these services can see your device's IP address. Their own privacy policies apply to it.</p>
-
-  <h2>Permissions</h2>
-  <ul>
-    <li><strong>Display over other apps:</strong> shows the ticker strip at the top of your screen. It can't read or interact with other apps.</li>
-    <li><strong>Usage access (optional):</strong> used only if you turn off "Show on home screen", to check on your phone whether an app or the home screen is in front. This information is never stored or sent anywhere.</li>
-    <li><strong>Internet:</strong> to fetch prices and to sign in.</li>
-    <li><strong>Foreground service:</strong> keeps the strip running while you use other apps.</li>
-  </ul>
-
-  <h2>How we use information</h2>
-  <p>Only to sign you in, to remember your free trial so it's used once per Google account, and to unlock Pro features you've paid for. No advertising, no profiling and no selling or renting of data.</p>
-
-  <h2>Sharing</h2>
-  <p>We don't share your information with anyone. It's processed by Google (Firebase and Google Play) acting as our service provider, under Google's privacy policy.</p>
-
-  <h2>Retention and deletion</h2>
-  <p>Your account stays until you delete it. Delete it anytime in the app under <strong>Settings → Delete account</strong>, or <a href="../delete-account/">request deletion here</a>. When you delete your account we remove your Firebase account (name, email and user ID).</p>
-  <p>We keep only the start date of your free trial, linked to your email, so the free trial can't be repeated. Purchase records are kept by Google Play as required by law.</p>
-
-  <h2>Security</h2>
-  <p>All data is sent over encrypted connections (HTTPS/TLS) and stored by Google Firebase. Access to your trial record is limited to your own signed-in account.</p>
-
-  <h2>Children</h2>
-  <p>Ticker Top is intended for adults (18+) and isn't directed at children.</p>
-
-  <h2>Not investment advice</h2>
-  <p>Prices may be delayed and are for information only. Ticker Top doesn't recommend buying or selling anything.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, we'll update this page and the date at the top. Important changes will also be shown in the app.</p>
-
-  <h2>Contact</h2>
-  <p>Questions or requests: <a href="mailto:managemyfinance.in@gmail.com?subject=Ticker%20Top%20privacy">managemyfinance.in@gmail.com</a></p>
-</div>
-
-</main>
-<footer class="wrap">
-  <nav>
-    <a href="../">Ticker Top</a>
-    <a href="../privacy/">Privacy policy</a>
-    <a href="../delete-account/">Delete account</a>
-    <a href="mailto:managemyfinance.in@gmail.com?subject=Ticker%20Top">Contact</a>
-    <a href="/">ManageMyFinance</a>
-  </nav>
-  <div>Ticker Top is designed and developed by Chaitanya Mankar · A ManageMyFinance app · © 2026</div>
-  <div>Prices are for information only and may be delayed. Ticker Top does not give investment advice.</div>
-</footer>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy - Ticker Top</title><meta name="description" content="How Ticker Top handles your information.">
+<meta property="og:title" content="Privacy policy - Ticker Top"><meta property="og:description" content="How Ticker Top handles your information."><meta property="og:type" content="website"><meta property="og:image" content="https://managemyfinance.in/tickertop/icon.png"><meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://managemyfinance.in/tickertop/privacy/">
+<meta name="theme-color" content="#2C3EBF"><link rel="icon" href="../icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Source+Sans+3:wght@400;600;700&display=swap"><link rel="stylesheet" href="../../style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap"><a class="brand" href="../index.html"><img src="../icon.png" alt="" width="34" height="34">Ticker Top</a><nav class="site-nav" aria-label="Main"><a href="../../index.html">Home</a><a href="../index.html">Ticker Top</a><a href="../privacy/index.html" aria-current="page">Privacy</a><a href="../delete-account/index.html">Delete account</a><a href="../../about.html">About</a><a href="../../contact.html">Contact</a></nav></div></header>
+<main id="main"><div class="wrap page-title"><h1>Privacy policy</h1><p class="lede">Ticker Top (Android app, com.managemyfinance.ticker). Last updated: 21 November 2026</p></div>
+<section><div class="wrap prose">
+<h2>What this app does</h2><p>Ticker Top shows live crypto, gold and currency prices on a thin strip at the top of your phone&rsquo;s screen, on top of other apps.</p>
+<h2>Who we are</h2><p>Ticker Top is made by Chaitanya Mankar under the ManageMyFinance brand (managemyfinance.in), Pune, India.</p>
+<h2>Google sign-in</h2><p>You sign in with your Google account so your free trial and plan stay with you. Firebase Authentication gives us your name, email address and a Firebase user ID. We never see your Google password.</p>
+<h2>Free trial record</h2><p>The date and time your 7-day free trial started is stored in Google Cloud Firestore under your email address, so the free trial can be used once per Google account.</p>
+<h2>Information stored on your phone</h2><p>The coins, gold and currency pairs you add, their order, your country and currency, and your settings such as theme, speed and refresh time. This stays on your phone and is not sent to us. Uninstalling the app removes it.</p>
+<h2>Price data</h2><p>To show prices, the app asks public market-data services for the symbols on your list: Binance (data-api.binance.vision), Coinbase (api.exchange.coinbase.com) and Frankfurter (api.frankfurter.dev). These requests contain only the symbols, for example BTC or USD/INR, never your name or email. Like any website, these services can see your device&rsquo;s IP address, and their own privacy policies apply to it.</p>
+<h2>Permissions</h2><p>Display over other apps: to show the ticker strip at the top of your screen. It cannot read or tap anything in other apps. Usage access (optional): only if you turn off Show on home screen, to check on your phone whether an app or the home screen is in front; this is never stored or sent anywhere. Internet: to fetch prices and to sign in. Foreground service: keeps the strip running while you use other apps.</p>
+<h2>What we do not do</h2><p>No advertising, no tracking, no profiling, and no selling or sharing of your information with advertisers. Your information is processed only by Google (Firebase and Google Play) acting as our service provider, under Google&rsquo;s privacy policy.</p>
+<h2>Payments</h2><p>If you buy Ticker Top Pro, the purchase is handled entirely by Google Play. We do not see or store your card, UPI or bank details. The app only learns from Google whether Pro is active on your account.</p>
+<h2>Retention and deletion</h2><p>Your account stays until you delete it. Delete it anytime in the app under Settings, Delete account, or follow the steps on the <a href="../delete-account/index.html">delete account page</a>. We then remove your Firebase account (name, email and user ID). We keep only the start date of your free trial, linked to your email, so the trial cannot be repeated. Purchase records are kept by Google Play as required by law.</p>
+<h2>Security</h2><p>All data is sent over encrypted connections (HTTPS) and stored by Google Firebase. Your trial record can be read only by your own signed-in account.</p>
+<h2>Children</h2><p>Ticker Top is meant for adults (18+) and is not directed at children.</p>
+<h2>Prices, not advice</h2><p>Prices may be delayed and are for information only. They are not financial or investment advice, and Ticker Top never tells you to buy or sell anything.</p>
+<h2>Changes to this policy</h2><p>If this policy changes, we will update this page and the date at the top. Important changes will also be shown in the app.</p>
+<h2>Contact</h2><p>Questions about this policy: <a href="mailto:managemyfinance.in@gmail.com">managemyfinance.in@gmail.com</a></p>
+</div></section></main>
+<footer class="site-foot"><div class="wrap"><nav aria-label="Footer"><a href="../index.html">Ticker Top</a><a href="../privacy/index.html">Privacy policy</a><a href="../delete-account/index.html">Delete account</a><a href="../../about.html">About</a><a href="../../contact.html">Contact</a><a href="../../index.html">Smart FD Tracker</a></nav>
+<div><strong>Your market, on top of every app.</strong></div>
+<div>Ticker Top is designed and developed by Chaitanya Mankar, a ManageMyFinance app. Prices are for information only and may be delayed. Ticker Top does not give investment advice.</div></div></footer>
+</body></html>
