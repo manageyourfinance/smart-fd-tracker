@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete account · Ticker Top</title>
+<meta name="description" content="How to delete your Ticker Top account and data.">
+<link rel="icon" href="../icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0F14;--card:#161B22;--line:#262D36;--fg:#F3F4F6;--muted:#9CA3AF;--green:#22C55E;--red:#F87171}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+a{color:var(--green)}a:hover{color:#4ADE80}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px}
+.top a{text-decoration:none;color:var(--muted)}.top a:hover{color:var(--fg)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--fg)!important;font-weight:700}
+.brand img{width:32px;height:32px;border-radius:8px}
+.strip{border-top:6px solid var(--green);border-bottom:6px solid var(--green);background:var(--card);padding:22px 12px;text-align:center;
+  font-weight:900;font-size:clamp(30px,7vw,60px);letter-spacing:-.5px;white-space:nowrap;overflow:hidden}
+.strip .up{color:var(--green);font-size:.6em;vertical-align:.18em}.strip .dn{color:var(--red);font-size:.6em;vertical-align:.18em}
+.strip .top-word{color:var(--green)}
+.tag{color:var(--green);font-weight:600;font-size:20px;text-align:center;margin:18px 0 4px}
+.lead{color:var(--muted);text-align:center;max-width:620px;margin:0 auto 26px;font-size:17px}
+.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:28px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.primary{background:var(--green);color:#052E16}.btn.ghost{border:1px solid var(--line);color:var(--fg)}
+.btn[aria-disabled=true]{opacity:.75;cursor:default}
+h1{font-size:34px;line-height:1.2;margin:28px 0 8px}
+h2{font-size:24px;margin:44px 0 14px}h3{font-size:18px;margin:0 0 6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.card p{margin:0;color:var(--muted)}
+.price{font-size:30px;font-weight:800;margin:4px 0}
+.badge{display:inline-block;background:var(--green);color:#052E16;font-weight:800;font-size:12px;padding:3px 8px;border-radius:6px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 16px 60px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;border-radius:50%;background:var(--green);color:#052E16;font-weight:800;display:flex;align-items:center;justify-content:center}
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin:10px 0 0}
+.doc h2{font-size:20px;margin:30px 0 8px}.doc p,.doc li{color:#D1D5DB}.doc ul{padding-left:22px}
+.note{background:var(--card);border-left:4px solid var(--green);border-radius:12px;padding:14px 16px;color:#D1D5DB}
+footer{border-top:1px solid var(--line);margin-top:56px;padding:26px 0 40px;color:var(--muted);font-size:14px}
+footer nav{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:10px}footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="wrap top">
+  <a class="brand" href="../"><img src="../icon.png" alt="">Ticker Top</a>
+  <a href="/">ManageMyFinance</a>
+</header>
+<main>
+
+<div class="wrap doc">
+  <h1>Delete your Ticker Top account</h1>
+  <p>Ticker Top (Android app by ManageMyFinance) lets you delete your account and its data at any time.</p>
+
+  <h2>Option 1: in the app (fastest)</h2>
+  <ol>
+    <li>Open <strong>Ticker Top</strong> and go to <strong>Settings</strong>.</li>
+    <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+    <li>Confirm, then choose your Google account when Google asks. Your account is deleted straight away and you're signed out.</li>
+  </ol>
+
+  <h2>Option 2: by email</h2>
+  <p>If you no longer have the app, email <a href="mailto:managemyfinance.in@gmail.com?subject=Delete%20my%20Ticker%20Top%20account&body=Please%20delete%20my%20Ticker%20Top%20account.%20My%20Google%20email%20is%3A%20">managemyfinance.in@gmail.com</a> from the Gmail address you signed in with, with the subject <strong>"Delete my Ticker Top account"</strong>. We'll delete it within 30 days and reply to confirm.</p>
+
+  <h2>What gets deleted</h2>
+  <ul>
+    <li>Your Ticker Top account: name, email address and Firebase user ID.</li>
+    <li>Your list and settings are on your phone only. Uninstall the app to remove them.</li>
+  </ul>
+
+  <h2>What we keep</h2>
+  <ul>
+    <li>The <strong>start date of your free trial</strong>, linked to your email, kept indefinitely so the free trial can't be repeated.</li>
+    <li><strong>Purchase records</strong> are kept by Google Play, not by us, as required by tax and payment laws.</li>
+  </ul>
+
+  <div class="note">Deleting your account doesn't cancel a subscription. To stop being charged, cancel it in Google Play → Payments &amp; subscriptions → Subscriptions → Ticker Top.</div>
+</div>
+
+</main>
+<footer class="wrap">
+  <nav>
+    <a href="../">Ticker Top</a>
+    <a href="../privacy/">Privacy policy</a>
+    <a href="../delete-account/">Delete account</a>
+    <a href="mailto:managemyfinance.in@gmail.com?subject=Ticker%20Top">Contact</a>
+    <a href="/">ManageMyFinance</a>
+  </nav>
+  <div>Ticker Top is designed and developed by Chaitanya Mankar · A ManageMyFinance app · © 2026</div>
+  <div>Prices are for information only and may be delayed. Ticker Top does not give investment advice.</div>
+</footer>
+</body>
+</html>
